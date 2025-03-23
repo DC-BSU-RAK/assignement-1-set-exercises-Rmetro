@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography Showcase</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 400px;
+            height: auto;
+            filter: grayscale(50%) contrast(120%) brightness(90%);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .caption {
+            font-size: 14px;
+            color: #333;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nature Photography Showcase</h1>
+    <div class="gallery">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3Gk42rRpE-g0QKwIQRultQu-PlVTIihifw&s" alt="Beautiful mountain landscape" title="Majestic Mountain View">
+            <p class="caption">Image by pngtree (License: Free to use, No attribution required)</p>
+        </div>
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/026/807/382/large_2x/the-serenity-of-a-tranquil-forest-scene-from-a-low-angle-perspective-generative-ai-photo.jpg" alt="Serene forest scenery" title="Tranquil Forest Scene">
+            <p class="caption">Image by vecteezy  (License: Free to use, No attribution required)</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl3N3l_G8bO5K2HW2lxBf9RYy6SVyKih7qHg&s" alt="Peaceful lake at sunset" title="Sunset Over a Calm Lake">
+            <p class="caption">Image by adobe stock (License: Free to use, No attribution required)</p>
+        </div>
+    </div>
+</body>
+</html>
