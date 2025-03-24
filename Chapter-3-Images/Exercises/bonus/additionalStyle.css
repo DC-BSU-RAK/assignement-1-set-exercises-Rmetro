@@ -1,0 +1,26 @@
+/* Styling for div#A */
+#A {
+    border-color: purple;
+    box-shadow: 10px 10px 20px red;
+  }
+  
+  /* Styling for div#B */
+  #B {
+    border-color: green;
+    box-shadow: inset -10px -10px 20px black;
+  }
+  
+  /* Styling for div#C */
+  #C {
+    border-radius: 50px;
+    border-width: 6px;
+    border-color: orange;
+    box-shadow: 0 0 0 6px blue, 0 0 0 12px red, 0 0 0 18px green;
+  }
+  
+  /* Styling for div#D */
+  #D {
+    border-color: brown;
+    text-shadow: 2px 2px 2px black;
+  }
+  
