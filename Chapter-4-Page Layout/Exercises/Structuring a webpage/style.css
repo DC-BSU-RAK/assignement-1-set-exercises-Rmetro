@@ -1,93 +1,89 @@
-/* General Styles */
+/* style.css */
 body {
-    font-family: Arial, sans-serif; /* Sets the default font for the body */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #000000; /* Sets the text color to black */
+    color: #000000;/* Sets the text color to black */
+    background-color: #ffffff;
 }
-
 /* Header Section */
 header {
-    background-color: #17072b; /* Dark purple background */
-    color: #FFFFFF; /* White text color */
+    background-color: #17072b;
+    color: #ffffff;/* White text color */
     text-align: center;
     padding: 20px;
     font-family: Tahoma, sans-serif; /* Specific font for the header */
-    font-weight: 700; /* Bold text */
+    font-weight: 700;/* Bold text */
 }
-
 /* Navigation Menu */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #FFFFFF; /* White text color */
+    color: #ffffff; /* White text color */
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Welcome Section */
-.welcome {
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
+}
+
+.welcome {
+    width: 60%;
 }
 
 .welcome h2 {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .welcome img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 600px;
-    display: block;
-    margin: auto;
+    width: 100%;/* Makes the image responsive */
+    height: auto;
 }
-
 /* Line Up Sidebar */
 .line-up {
-    background-color: #172d67; /* Blue background */
-    color: #FFFFFF; /* White text */
+    width: 35%;
+    background-color: #172d67;/* Blue background */
+    color: #ffffff;/* White text */
     padding: 20px;
-    text-align: left;
 }
 
 .line-up h2 {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .line-up ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
-
-.line-up ul li {
-    margin: 10px 0;
-}
-
 /* Images under Line Up */
 .images {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .images img {
-    width: 45%; /* Ensures the images take equal space */
-    max-width: 200px;
+    width: 48%;/* Ensures the images take equal space */
     height: auto;
 }
-
 /* Footer Section */
 footer {
-    background-color: #8c15e9; /* Footer background color */
-    color: #FFFFFF; /* White text color */
+    background-color: #8c15e9;/* Footer background color */
+    color: #ffffff; /* White text color */
     text-align: center;
     padding: 10px;
-    font-size: 14px;
+    margin-top: 20px;
 }
