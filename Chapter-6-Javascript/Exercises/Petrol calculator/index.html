@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petrol Calculator</title>
+  <!-- Styling for clean and professional appearance -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #7aa9d8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .calculator {
+      background: #eae4e4;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #888282;
+      border-radius: 6px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    input[type="number"]:focus {
+      border-color: #007BFF;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    p#totalCost {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Petrol Calculator</h2>
+
+    <!-- Input for cost per liter -->
+    <label for="costPerLiter">Cost per Liter ($):</label>
+    <input type="number" id="costPerLiter" value="1.72" step="0.01">
+
+    <!-- Input for number of liters -->
+    <label for="litersPurchased">Liters Purchased:</label>
+    <input type="number" id="litersPurchased" value="0" step="0.1">
+
+    <!-- Button to calculate total cost -->
+    <button onclick="calculateTotal()">Calculate Total</button>
+
+    <!-- Paragraph to display total cost -->
+    <p id="totalCost">Total Cost: $0.00</p>
+  </div>
+
+  <!-- Script for calculator logic -->
+  <script>
+    // Function to calculate the total cost of petrol
+    function calculateTotal() {
+      // Get the cost per liter and liters purchased from input fields
+      const costPerLiter = parseFloat(document.getElementById('costPerLiter').value);
+      const litersPurchased = parseFloat(document.getElementById('litersPurchased').value);
+
+      // Calculate total cost
+      const total = costPerLiter * litersPurchased;
+
+      // Display total cost with 2 decimal places
+      document.getElementById('totalCost').textContent = `Total Cost: $${total.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
