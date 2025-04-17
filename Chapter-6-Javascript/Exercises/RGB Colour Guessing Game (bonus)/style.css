@@ -1,0 +1,67 @@
+/* Main styling for the RGB Colour Guessing Game */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #a4c3f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .game-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  #rgbDisplay {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    gap: 10px;
+  }
+  
+  .option {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border 0.2s;
+  }
+  
+  .option:hover {
+    transform: scale(1.1);
+    border: 2px solid #007BFF;
+  }
+  
+  #feedback {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  #restartBtn {
+    padding: 0.6rem 1.2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: none;
+  }
+  
+  #restartBtn:hover {
+    background-color: #0056b3;
+  }
+  
